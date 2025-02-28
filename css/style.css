@@ -498,9 +498,9 @@ h1 {
 .footer-subscribe-container-form {
   display: flex;
   align-items: center;
+  gap: 24px;
 }
 .footer-subscribe-container-label {
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 .footer-subscribe-container-input {
   border: 1px solid #fff;
@@ -509,37 +509,35 @@ h1 {
   height: 40px;
   outline: none;
   padding: 8px 16px 8px 16px;
-  background-color: #2e2f42;
-}
-.footer-subscribe-container-input::placeholder {
+  background-color: transparent;
   font-weight: 400;
   font-size: 12px;
   line-height: 200%;
   letter-spacing: 0.04em;
-  color: #fff;
+  color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.footer-subscribe-container-input::placeholder {
+  color: #ffffff;
 }
 .footer-subscribe-container-btn {
+  border: none;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 4px;
   padding: 8px 24px;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   background: #4d5ae5;
-  margin-left: 24px;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer-subscribe-container-btn-text {
-  font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 150%;
   letter-spacing: 0.04em;
-  text-align: center;
-  color: #fff;
+  line-height: 1.5;
+  color: #ffffff;
 }
+
 .footer-subscribe-container-svg {
   fill: #fff;
   margin-left: 16px;
